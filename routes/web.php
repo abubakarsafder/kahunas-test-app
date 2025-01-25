@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ChatGPTController;
 use Illuminate\Support\Facades\Route;
 
@@ -7,4 +8,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+// Route::get('/create-role', [AuthController::class, 'createRole']);
 Route::get('/', [ChatGPTController::class, 'index']);

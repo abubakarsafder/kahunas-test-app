@@ -12,13 +12,13 @@ use Spatie\Permission\Models\Role;
 
 class AuthController extends Controller
 {
-    public function createRole()
-    {
-        Role::create(['name' => 'coach']);
-        Role::create(['name' => 'client']);
+    // public function createRole()
+    // {
+    //     Role::create(['name' => 'coach']);
+    //     Role::create(['name' => 'client']);
 
-        return 'Done';
-    }
+    //     return 'Done';
+    // }
 
     public function register(Request $request)
     {
