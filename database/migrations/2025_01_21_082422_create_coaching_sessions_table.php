@@ -22,7 +22,7 @@ return new class extends Migration
             $table->softDeletes();
 
             $table->foreign('coach_id')->references('id')->on('users');
-            $table->foreign('client_id')->references('id')->on('clients');
+            $table->foreign('client_id')->references('id')->on('users');
         });
     }
 
